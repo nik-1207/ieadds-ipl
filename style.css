@@ -12,6 +12,7 @@ nav {
     display: flex;
     box-shadow: 0px 4px 8px hsla(0, 0%, 7%, .5);
     color: white;
+    width: 100%;
 }
 
 nav img {
@@ -27,19 +28,41 @@ nav h1 {
 }
 
 .box-container {
+    border: 2px solid red;
     display: grid;
-    margin-top: 2%;
     grid-template-columns: auto auto auto auto;
+    grid-column-gap: 5px;
 }
 
 .card {
-    border: 2px solid red;
-    width: max-content;
     background: linear-gradient(136deg, rgb(253, 185, 19), rgb(248, 92, 0));
+    text-align: center;
+    border-radius: 1em;
+    margin-top: 70px;
 }
 
 .card img {
     width: 160px;
     height: 160px;
     margin-top: -10%;
+}
+
+.card h2,
+h4,
+p {
+    color: white;
+}
+
+.card p {
+    font-weight: 850;
+    font-size: 1em;
+}
+
+.winnings {
+    background: rgba(0, 0, 0, 0.2);
+    color: #e2d612;
+    margin: 5px 50px 5px 50px;
+    padding: 5px;
+    width: 60%;
+    text-align: center;
 }
