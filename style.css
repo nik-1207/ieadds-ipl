@@ -26,7 +26,20 @@ nav h1 {
     font-size: 1em;
 }
 
+.box-container {
+    display: grid;
+    margin-top: 2%;
+    grid-template-columns: auto auto auto auto;
+}
+
 .card {
     border: 2px solid red;
     width: max-content;
+    background: linear-gradient(136deg, rgb(253, 185, 19), rgb(248, 92, 0));
+}
+
+.card img {
+    width: 160px;
+    height: 160px;
+    margin-top: -10%;
 }
