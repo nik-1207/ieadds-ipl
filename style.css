@@ -80,13 +80,16 @@ p {
     border-radius: 1cm;
 }
 
+.tab-arrow {
+    display: none;
+}
+
 
 /* tablet 768 px */
 
 @media only screen and (max-width: 1015px) {
     .box-container {
         flex-direction: column;
-        border: 2px solid red;
         padding: 5px;
     }
     .card {
@@ -101,33 +104,40 @@ p {
         padding: 5px;
         width: 2.5cm;
     }
-    .card h2,
-    h4,
-    p {
-        color: white;
-        display: none;
+    .card h2 {
+        height: max-content;
+        text-align: left;
+        font-size: 1em;
+        margin-top: 15px !important;
+        padding: 5px !important;
     }
     .card h4 {
-        padding: 10px;
         display: none;
     }
-    .card h2 {
-        padding-top: 2px;
-        padding-bottom: 2px;
-        padding-left: 20px;
-        padding-right: 20px;
-        margin: 5px !important;
-        text-align: center;
-        display: none;
+    .tab-layout {
+        padding: 0;
+        margin: 0;
+        width: 100%;
     }
     .card p {
-        display: none;
-        font-weight: 850;
-        font-size: 1em;
-        margin: 10px !important;
-        padding: 5px;
+        display: none
     }
+    ;
     .winnings {
-        display: none;
+        height: max-content;
+        margin: 0;
+        padding: 0;
+        text-align: initial;
+        width: max-content;
+        border-radius: 1cm;
+    }
+    .tab-arrow {
+        display: initial;
+        font-size: 2em;
+        color: white;
+        padding: 45px 12px 40px 5px;
+        background-color: #1f1f1f52;
+        border-radius: 0px 5px 5px 0px;
+        float: right;
     }
 }
