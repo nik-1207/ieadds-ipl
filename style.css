@@ -28,23 +28,26 @@ nav h1 {
 }
 
 .box-container {
-    border: 2px solid red;
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-column-gap: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 50px;
 }
 
 .card {
     background: linear-gradient(136deg, rgb(253, 185, 19), rgb(248, 92, 0));
+    width: 20%;
+    margin: 2%;
     text-align: center;
-    border-radius: 1em;
     margin-top: 70px;
+    margin-bottom: 0;
+    border-radius: 1rem;
+    box-shadow: 0px 1px 2px black;
 }
 
 .card img {
-    width: 160px;
-    height: 160px;
-    margin-top: -10%;
+    margin-top: -50px;
+    width: 50%;
+    position: relative;
 }
 
 .card h2,
@@ -53,9 +56,24 @@ p {
     color: white;
 }
 
+.card h4 {
+    padding: 10px;
+}
+
+.card h2 {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 5px !important;
+    text-align: center;
+}
+
 .card p {
     font-weight: 850;
     font-size: 1em;
+    margin: 10px !important;
+    padding: 5px;
 }
 
 .winnings {
@@ -63,6 +81,58 @@ p {
     color: #e2d612;
     margin: 5px 50px 5px 50px;
     padding: 5px;
-    width: 60%;
     text-align: center;
+    border-radius: 1cm;
+}
+
+
+/* tablet 768 px */
+
+@media only screen and (max-width: 768px) {
+    .box-container {
+        flex-direction: column;
+        border: 2px solid red;
+        padding: 5px;
+    }
+    .card {
+        display: flex;
+        flex-direction: row;
+        margin: 10px 1px 10px 1px;
+        border-radius: 5px;
+        width: 100%;
+    }
+    .card img {
+        margin-top: 1px;
+        padding: 5px;
+        width: 2.5cm;
+    }
+    .card h2,
+    h4,
+    p {
+        color: white;
+        display: none;
+    }
+    .card h4 {
+        padding: 10px;
+        display: none;
+    }
+    .card h2 {
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin: 5px !important;
+        text-align: center;
+        display: none;
+    }
+    .card p {
+        display: none;
+        font-weight: 850;
+        font-size: 1em;
+        margin: 10px !important;
+        padding: 5px;
+    }
+    .winnings {
+        display: none;
+    }
 }
