@@ -83,7 +83,7 @@ p {
 
 .tab-arrow {
     color: red;
-    display: none;
+    display: none !important;
 }
 
 .card-csk {
@@ -167,7 +167,7 @@ p {
         border-radius: 1cm;
     }
     .tab-arrow {
-        display: initial;
+        display: initial !important;
         font-size: 2em;
         color: white;
         padding: 45px 12px 40px 5px;
