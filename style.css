@@ -25,18 +25,17 @@ nav h1 {
 .box-container {
     display: flex;
     flex-wrap: wrap;
-    padding-left: 50px;
+    padding-left: 1%;
 }
 
 .card {
-    background: linear-gradient(136deg, rgb(253, 185, 19), rgb(248, 92, 0));
-    width: 20%;
-    margin: 2%;
+    width: auto;
+    margin: auto;
     text-align: center;
     margin-top: 70px;
     margin-bottom: 0;
     border-radius: 1rem;
-    box-shadow: 0px 1px 2px black;
+    box-shadow: 4px 4px 9px 0px #a2a2a2;
 }
 
 .card img {
@@ -60,8 +59,9 @@ p {
     padding-bottom: 2px;
     padding-left: 20px;
     padding-right: 20px;
-    margin: 5px !important;
+    margin: 30px 30px !important;
     text-align: center;
+    width: 200px;
 }
 
 .card p {
@@ -81,13 +81,46 @@ p {
 }
 
 .tab-arrow {
+    color: red;
     display: none;
+}
+
+.card-csk {
+    background: linear-gradient(136deg, rgb(253, 185, 19), rgb(248, 92, 0));
+}
+
+.card-dc {
+    background: linear-gradient(136deg, #004c93, #0358a7);
+}
+
+.card-kkr {
+    background: linear-gradient(136deg, #70458f, #3d2057);
+}
+
+.card-mi {
+    background: linear-gradient(136deg, #005da0, #003a63);
+}
+
+.card-kxip {
+    background: linear-gradient(136deg, #aa4545, #740f0b);
+}
+
+.card-rr {
+    background: linear-gradient(136deg, #2d4d9d, #172e5e);
+}
+
+.card-rcb {
+    background: linear-gradient(136deg, #000, #464646);
+}
+
+.card-srh {
+    background: linear-gradient(136deg, #fb643e, #b81c25);
 }
 
 
 /* tablet 768 px */
 
-@media only screen and (max-width: 1015px) {
+@media only screen and (max-width: 640px) {
     .box-container {
         flex-direction: column;
         padding: 5px;
@@ -115,20 +148,21 @@ p {
         display: none;
     }
     .tab-layout {
+        display: flex;
         padding: 0;
         margin: 0;
         width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
     }
     .card p {
-        display: none
+        display: none;
     }
-    ;
     .winnings {
-        height: max-content;
-        margin: 0;
-        padding: 0;
-        text-align: initial;
-        width: max-content;
+        background: rgba(0, 0, 0, 0.2);
+        color: #e2d612;
+        padding: 8px;
+        margin: 0 !important;
         border-radius: 1cm;
     }
     .tab-arrow {
