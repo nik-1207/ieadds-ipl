@@ -1,5 +1,6 @@
 html {
     font-family: Arial, Helvetica, sans-serif;
+    margin: 20px
 }
 
 nav {
@@ -127,7 +128,6 @@ p {
     }
     .card {
         display: flex;
-        flex-direction: row;
         margin: 10px 1px 10px 1px;
         border-radius: 5px;
         width: 100%;
@@ -141,8 +141,9 @@ p {
         height: max-content;
         text-align: left;
         font-size: 1em;
-        margin-top: 15px !important;
+        margin: 15px 0px 5px !important;
         padding: 5px !important;
+        width: fit-content;
     }
     .card h4 {
         display: none;
@@ -161,7 +162,7 @@ p {
     .winnings {
         background: rgba(0, 0, 0, 0.2);
         color: #e2d612;
-        padding: 8px;
+        padding: 4% 1% 4% 1%;
         margin: 0 !important;
         border-radius: 1cm;
     }
