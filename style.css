@@ -165,6 +165,10 @@ p {
         padding: 4% 1% 4% 1%;
         margin: 0 !important;
         border-radius: 1cm;
+        width: auto;
+    }
+    .winnings span {
+        width: auto;
     }
     .tab-arrow {
         display: initial !important;
@@ -174,5 +178,11 @@ p {
         background-color: #1f1f1f52;
         border-radius: 0px 5px 5px 0px;
         float: right;
+    }
+}
+
+@media only screen and (max-width: 365px) {
+    .winnings span {
+        font-size: 0.7em;
     }
 }
