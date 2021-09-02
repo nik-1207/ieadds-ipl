@@ -20,6 +20,17 @@ teamVenue = [
     document.querySelector('#venue-srh'),
 
 ]
+teamWin = [
+    document.querySelector('#win-csk'),
+    document.querySelector('#win-dc'),
+    document.querySelector('#win-kxip'),
+    document.querySelector('#win-kkr'),
+    document.querySelector('#win-mi'),
+    document.querySelector('#win-rr'),
+    document.querySelector('#win-rcb'),
+    document.querySelector('#win-srh'),
+
+]
 teamData = [{
         "id": "chennai-super-kings",
         "teamName": "Chennai Super Kings",
@@ -95,4 +106,11 @@ for (let i = 0; i < teamData.length; i++) {
     console.log()
     teamHeader[i].innerText = teamData[i].teamName
     teamVenue[i].innerText = teamData[i].venue
+    if (teamData[i].winningYears.length > 0) {
+        teamWin[i].innerText = teamData[i].winningYears
+
+    } else {
+        teamWin[i].parentElement.style.visibility = 'hidden'
+    }
+
 }
