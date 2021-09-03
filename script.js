@@ -96,21 +96,36 @@ teamData = [{
         "venue": "Rajiv Gandhi Intl. Cricket Stadium"
     }
 ]
+
 fetch("https://cors-anywhere.herokuapp.com/https://ipl-t20.herokuapp.com/teams", {
     method: "GET",
 }).then((data) => { return data.json() }).then((res) => {
     teamData = res
-});
+    if (res.length != 0) {
+        for (let i = 0; i < teamData.length; i++) {
+            console.log()
+            teamHeader[i].innerText = teamData[i].teamName
+            teamVenue[i].innerText = teamData[i].venue
+            if (teamData[i].winningYears.length > 0) {
+                teamWin[i].innerText = teamData[i].winningYears
 
-for (let i = 0; i < teamData.length; i++) {
-    console.log()
-    teamHeader[i].innerText = teamData[i].teamName
-    teamVenue[i].innerText = teamData[i].venue
-    if (teamData[i].winningYears.length > 0) {
-        teamWin[i].innerText = teamData[i].winningYears
+            } else {
+                teamWin[i].parentElement.style.visibility = 'hidden'
+            }
 
-    } else {
-        teamWin[i].parentElement.style.visibility = 'hidden'
+        }
     }
+}).catch((e) => {
+    for (let i = 0; i < teamData.length; i++) {
+        console.log()
+        teamHeader[i].innerText = teamData[i].teamName
+        teamVenue[i].innerText = teamData[i].venue
+        if (teamData[i].winningYears.length > 0) {
+            teamWin[i].innerText = teamData[i].winningYears
 
-}
+        } else {
+            teamWin[i].parentElement.style.visibility = 'hidden'
+        }
+
+    }
+})
