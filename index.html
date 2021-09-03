@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="teamdetail.css">
     <script src="https://kit.fontawesome.com/fb7d93c606.js" crossorigin="anonymous"></script>
     <title>IPL</title>
 </head>
@@ -16,7 +17,7 @@
         <h1>INDIAN PREMIER LEAGUE</h1>
     </nav>
     <div class="box-container" id="app">
-        <div class="card card-csk ">
+        <div class="card card-csk " onclick="setTeam('csk')">
             <img src="./assets/csk.png" alt="">
             <div class="tab-layout">
                 <h2 id="h-csk"></h2>
@@ -29,7 +30,7 @@
             <a href="/#about" style="margin: 0;">Team Home</a>
             <i class="fas fa-angle-right tab-arrow"></i>
         </div>
-        <div class="card card-dc">
+        <div class="card card-dc" onclick="setTeam('dc')">
             <img src="./assets/dc.png" alt="">
             <div class="tab-layout">
                 <h2 id="h-dc"></h2>
@@ -43,7 +44,7 @@
             <a href="/#about" style="margin: 0;">Team Home</a>
             <i class="fas fa-angle-right tab-arrow"></i>
         </div>
-        <div class="card card-kxip">
+        <div class="card card-kxip" onclick="setTeam('kxip')">
             <img src="./assets/pk.png" alt="">
             <div class="tab-layout">
                 <h2 id="h-kxip"></h2>
@@ -57,7 +58,7 @@
             <a href="/#about" style="margin: 0;">Team Home</a>
             <i class="fas fa-angle-right tab-arrow"></i>
         </div>
-        <div class="card card-kkr">
+        <div class="card card-kkr" onclick="setTeam('kkr')">
             <img src="./assets/kkr.png" alt="">
             <div class="tab-layout">
                 <h2 id="h-kkr"></h2>
@@ -72,7 +73,7 @@
             <a href="/#about" style="margin: 0;">Team Home</a>
             <i class="fas fa-angle-right tab-arrow"></i>
         </div>
-        <div class="card card-mi">
+        <div class="card card-mi" onclick="setTeam('mi')">
             <img src="./assets/mi.png" alt="">
             <div class="tab-layout">
                 <h2 id="h-mi"></h2>
@@ -87,7 +88,7 @@
             <a href="/#about" style="margin: 0;">Team Home</a>
             <i class="fas fa-angle-right tab-arrow"></i>
         </div>
-        <div class="card card-rr">
+        <div class="card card-rr" onclick="setTeam('rr')">
             <img src="./assets/rr.png" alt="">
             <div class="tab-layout">
                 <h2 id="h-rr"></h2>
@@ -102,7 +103,7 @@
             <a href="/#about" style="margin: 0;">Team Home</a>
             <i class="fas fa-angle-right tab-arrow"></i>
         </div>
-        <div class="card card-rcb">
+        <div class="card card-rcb" onclick="setTeam('rcb')">
             <img src="./assets/rcb.png" alt="">
             <div class="tab-layout">
                 <h2 id="h-rcb"></h2>
@@ -116,7 +117,7 @@
             <a href="/#about" style="margin: 0;">Team Home</a>
             <i class="fas fa-angle-right tab-arrow"></i>
         </div>
-        <div class="card card-srh">
+        <div class="card card-srh" onclick="setTeam('srh')">
             <img src="./assets/srh.png" alt="">
             <div class="tab-layout">
                 <h2 id="h-srh"></h2>
@@ -130,8 +131,8 @@
             <a href="/#about" style="margin: 0;">Team Home</a>
             <i class="fas fa-angle-right tab-arrow"></i>
         </div>
+        <script src="script.js"></script>
     </div>
-    <script src="script.js"></script>
 </body>
 
 
