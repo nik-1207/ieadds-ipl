@@ -1,9 +1,13 @@
+const root = document.getElementById('root');
+root.innerHTML = `<div class="loader"></div>`;
 let getPlayerList = async() => {
     try {
         const reponse = await fetch('https://ipl-t20.herokuapp.com/teams/rajasthan-royals');
         const json = reponse.json();
         return json;
     } catch (err) {
+        root.innerHTML = "Not found"
+
         console.log(err);
     }
 }

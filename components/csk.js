@@ -1,16 +1,22 @@
+const root = document.getElementById('root');
+root.innerHTML = `<div class="loader"></div>`;
 let getPlayerList = async() => {
     try {
         const response = await fetch('https://ipl-t20.herokuapp.com/teams/chennai-super-kings');
         const json = await response.json();
         return json;
     } catch (err) {
-        console.log(err);
+        root.innerHTML = "Not found"
+        console.log("asd", err);
     }
 }
 let Csk = {
+        beforeRender: async() => {
+            //show loader
+            return `fhghs`
+        },
         render: async() => {
                 let playersList = await getPlayerList();
-                console.log(playersList.players);
                 let view =
                     `<div class="team-container">
                 <div class="team-header csk">
@@ -56,7 +62,9 @@ let Csk = {
            </div>  `
         return view
     },
-    after_render: async () => { }
+    after_render: async () =>
+    {
+    }
 }
 
 export default Csk;

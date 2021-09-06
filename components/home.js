@@ -1,3 +1,5 @@
+const root = document.getElementById('root');
+root.innerHTML = `<div class="loader"></div>`;
 let getAllTeamData = async() => {
     const options = {
         method: 'GET',
@@ -9,6 +11,7 @@ let getAllTeamData = async() => {
         console.log(json)
         return json
     } catch (err) {
+        root.innerHTML = "Not found"
         console.log('Error getting documents', err)
     }
 }

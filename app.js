@@ -24,7 +24,6 @@ const routes = {
 const router = async() => {
     const content = null || document.getElementById('root');
     let request = Utils.parseRequestURL()
-    console.log("after parsing", request);
     let parsedURL = (request.resource ? '/' + request.resource : '/') + (request.id ? '/:id' : '') + (request.verb ? '/' + request.verb : '')
     let page = routes[parsedURL] ? routes[parsedURL] : NotFound
     content.innerHTML = await page.render();

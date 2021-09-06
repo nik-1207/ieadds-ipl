@@ -1,9 +1,13 @@
+const root = document.getElementById('root');
+root.innerHTML = `<div class="loader"></div>`;
 let getPlayerList = async() => {
     try {
         const response = await fetch('https://ipl-t20.herokuapp.com/teams/mumbai-indians');
         const json = response.json();
         return json;
     } catch (error) {
+        root.innerHTML = "Not found"
+
         console.log(error);
     }
 }
