@@ -11,8 +11,8 @@ let getAllTeamData = async() => {
         console.log(json)
         return json
     } catch (err) {
-        root.innerHTML = `    <div id="not-found">
-        Page Not Found
+        root.innerHTML = `<div id="not-found">
+        Oops Something Went 
         <br> 404 Error
     </div>`
         console.log('Error getting documents', err)
@@ -34,7 +34,7 @@ let Home = {
                 <span id="win-csk">${allTeamData[0].winningYears}</span>
             </div>
         </div>
-        <a href="/#teams/csk" style="margin: 0;">Team Home</a>
+        <a href="/ieadds-ipl/#teams/csk" style="margin: 0;">Team Home</a>
         <i class="fas fa-angle-right tab-arrow"></i>
     </div>
     <div class="card card-dc">
@@ -47,7 +47,7 @@ let Home = {
                 <span id="win-dc">${allTeamData[1].winningYears}</span>
             </div>
         </div>
-        <a href="/#teams/dc" style="margin: 0;">Team Home</a>
+        <a href="/ieadds-ipl/#teams/dc" style="margin: 0;">Team Home</a>
         <i class="fas fa-angle-right tab-arrow"></i>
     </div>
     <div class="card card-kxip">
@@ -60,7 +60,7 @@ let Home = {
                 <span id="win-kxip">${allTeamData[2].winningYears}</span>
             </div>
         </div>
-        <a href="/#teams/kxip" style="margin: 0;">Team Home</a>
+        <a href="/ieadds-ipl/#teams/kxip" style="margin: 0;">Team Home</a>
         <i class="fas fa-angle-right tab-arrow"></i>
     </div>
     <div class="card card-kkr" >
@@ -73,7 +73,7 @@ let Home = {
                 <span id="win-kkr">${allTeamData[3].winningYears}</span>
             </div>
         </div>
-        <a href="/#teams/kkr" style="margin: 0;">Team Home</a>
+        <a href="/ieadds-ipl/#teams/kkr" style="margin: 0;">Team Home</a>
         <i class="fas fa-angle-right tab-arrow"></i>
     </div>
     <div class="card card-mi">
@@ -87,7 +87,7 @@ let Home = {
 
             </div>
         </div>
-        <a href="/#teams/mi" style="margin: 0;">Team Home</a>
+        <a href="/ieadds-ipl/#teams/mi" style="margin: 0;">Team Home</a>
         <i class="fas fa-angle-right tab-arrow"></i>
     </div>
     <div class="card card-rr">
@@ -101,7 +101,7 @@ let Home = {
 
             </div>
         </div>
-        <a href="/#teams/rr" style="margin: 0;">Team Home</a>
+        <a href="/ieadds-ipl/#teams/rr" style="margin: 0;">Team Home</a>
         <i class="fas fa-angle-right tab-arrow"></i>
     </div>
     <div class="card card-rcb">
@@ -114,7 +114,7 @@ let Home = {
                 <span id="win-rcb">${allTeamData[6].winningYears}</span>
             </div>
         </div>
-        <a href="/#teams/rcb" style="margin: 0;">Team Home</a>
+        <a href="/ieadds-ipl/#teams/rcb" style="margin: 0;">Team Home</a>
         <i class="fas fa-angle-right tab-arrow"></i>
     </div>
     <div class="card card-srh">
@@ -127,7 +127,7 @@ let Home = {
                 <span id="win-srh">${allTeamData[5].winningYears}</span>
             </div>
         </div>
-        <a href="/#teams/srh" style="margin: 0;">Team Home</a>
+        <a href="/ieadds-ipl/#teams/srh" style="margin: 0;">Team Home</a>
         <i class="fas fa-angle-right tab-arrow"></i>
     </div>
 </div>
