@@ -1,5 +1,5 @@
 const root = document.getElementById('root');
-root.innerHTML = `<div class="loader"></div>`;
+root.innerHTML = `<div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>`;
 let getAllTeamData = async() => {
     const options = {
         method: 'GET',

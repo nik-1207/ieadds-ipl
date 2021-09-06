@@ -1,5 +1,5 @@
 const root = document.getElementById('root');
-root.innerHTML = `<div class="loader"></div>`;
+root.innerHTML = `<div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>`;
 let getPlayerList = async() => {
     try {
         const response = await fetch('https://ipl-t20.herokuapp.com/teams/kings-xi-punjab');
