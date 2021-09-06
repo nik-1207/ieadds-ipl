@@ -135,7 +135,8 @@ a {
         width: 100%;
     }
     .card a {
-        display: none;
+        margin-top: 50px !important;
+        line-height: 1em;
     }
     .card img {
         margin-top: 1px;
