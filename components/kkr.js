@@ -6,7 +6,10 @@ let getPlayerList = async() => {
         const json = await response.json();
         return json;
     } catch (error) {
-        root.innerHTML = "Not found"
+        root.innerHTML = `    <div id="not-found">
+        Page Not Found
+        <br> 404 Error
+    </div>`
 
         console.log(error);
     }

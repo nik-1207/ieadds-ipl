@@ -11,7 +11,10 @@ let getAllTeamData = async() => {
         console.log(json)
         return json
     } catch (err) {
-        root.innerHTML = "Not found"
+        root.innerHTML = `    <div id="not-found">
+        Page Not Found
+        <br> 404 Error
+    </div>`
         console.log('Error getting documents', err)
     }
 }
