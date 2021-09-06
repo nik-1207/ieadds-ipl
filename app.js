@@ -8,6 +8,7 @@ import Kkr from './components/kkr.js';
 import Dc from './components/dc.js';
 import Kxip from './components/kxip.js';
 import Rr from './components/rr.js';
+import NotFound from './components/404.js';
 
 const routes = {
     '/': Home,
@@ -25,7 +26,7 @@ const router = async() => {
     let request = Utils.parseRequestURL()
     console.log("after parsing", request);
     let parsedURL = (request.resource ? '/' + request.resource : '/') + (request.id ? '/:id' : '') + (request.verb ? '/' + request.verb : '')
-    let page = routes[parsedURL] ? routes[parsedURL] : Error404
+    let page = routes[parsedURL] ? routes[parsedURL] : NotFound
     content.innerHTML = await page.render();
     await page.after_render();
 
